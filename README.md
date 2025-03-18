@@ -1,58 +1,92 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
+This is a Shopping Cart web application built using modern web technologies. The application allows users to browse products, add items to their cart, and proceed to checkout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Installation Guide
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### **1️⃣ Clone the Repository**
+```sh
+git clone https://github.com/tfkanhaiya/shopping-cart.git
+cd shopping-cart
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### **2️⃣ Install Dependencies**
+Ensure you have **Node.js** installed. Then, run:
+```sh
+npm install
 ```
-=======
-# shopping-cart
->>>>>>> 8c2317db1080153ea0b97bbaa12fe1f34eff54eb
+
+### **3️⃣ Start the Development Server**
+```sh
+npm run dev
+```
+
+> _This will start the app on `http://localhost:3000/`._
+
+### **4️⃣ Build for Production**
+```sh
+npm run build
+```
+
+### **5️⃣ Run Production Build**
+```sh
+npm start
+```
+
+---
+
+## 📂 Project Structure
+
+```
+shopping-cart/
+│── public/              # Static assets (images, icons, etc.)
+│── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Application pages
+│   ├── hooks/           # Custom hooks
+│   ├── context/         # Global state management
+│   ├── utils/           # Helper functions
+│   ├── styles/          # Global styles (CSS/SCSS/Tailwind)
+│── .gitignore           # Files to ignore in version control
+│── package.json         # Dependencies & scripts
+│── README.md            # Project documentation
+```
+
+---
+
+## 🎯 Features
+✅ Product Listing & Filtering  
+✅ Add to Cart & Remove Items  
+✅ Checkout Process  
+
+
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** React, Tailwind CSS
+- **Backend:** Node.js, Express.js (if applicable)
+- **Database:** MongoDB / Firebase (if applicable)
+
+---
+
+## 💡 Contributing
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m "Added new feature"`).
+4. Push to your branch (`git push origin feature-name`).
+5. Open a Pull Request.
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**.
+
+---
+
+### 🔗 Contact
+For any queries, reach out to [Kanhaiya Kumar](https://github.com/tfkanhaiya).
+
+
